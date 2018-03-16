@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <table border=1>
+
+        <thead>
+        <td>Number</td>
+        <td>Date</td>
+        <td>Title</td>
+        <td>Entry</td>
+        </thead>
+
+        {% for row in rows %}
+        <tr>
+            <td>{{row["NUM"]}}</td>
+            <td>{{row["DATE"]}}</td>
+            <td> {{ row["TITLE"]}}</td>
+            <td>{{row["ENTRY"]}}</td>
+            <td><a href="{{ url_for('view_entry', name=row["TITLE"]) }}">View</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/">Go back to home page</a>
+</body>
+</html>

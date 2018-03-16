@@ -1,0 +1,27 @@
+online diary notes 
+
+-python and flask and basic html
+
+- main home page
+	- list diary entries that you have written
+		- display title
+		- display date
+		-> NEED GET THE TITLE AND DATE OF ALL ENTRIES IN THE DATABASE
+	- allow you to view the diary entries you've already written
+		- have a view button 
+		- when view button is clicked, redirect to a page that shows the chosen entry
+			- redirects are by entry/<entry number>
+			-> NEED TO GET THE ENTRY NUMBER OF ALL THE ENTRIES IN THE DATABASE
+
+- view a diary entry
+	- opens a diary entry you've created previously
+	- displays title
+	- displays entry
+	- displays mood
+	- displays date created
+
+- write a diary entry
+	- gives you a text box to write a title
+	- gives you a text box to write the date
+	- gives you a checkbox to record your mood
+	- records the date and time that you've created the entry
